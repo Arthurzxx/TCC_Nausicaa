@@ -1,5 +1,5 @@
 ---------. Requisitos funcionais revisados .---------
-Estes são os requisitos que podemos documentar para o Nausicaä:
+
 - RF01 — Consulta de guerras: O sistema deve permitir que o usuário consulte informações sobre guerras históricas, suas causas e consequências.
 - RF02 — Exibição de vídeos: O sistema deve permitir que o usuário assista a vídeos relacionados às guerras, como conteúdo complementar e opcional.
 - RF03 — Consulta de obras: O sistema deve permitir que o usuário consulte obras que apresentam reflexões e propostas para promover a paz.
