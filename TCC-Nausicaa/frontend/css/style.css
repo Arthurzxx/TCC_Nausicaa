@@ -1,0 +1,98 @@
+/* ===== Variáveis: paleta e fontes num lugar só ===== */
+:root {
+  --fundo: #ecece6;
+  --texto: #111111;
+  --texto-suave: #5b5b57;
+  --linha: #111111;
+  --azul: #7b9bc0;
+  --fonte-titulo: "Fraunces", Georgia, serif;
+  --fonte-texto: "Inter", Arial, sans-serif;
+}
+
+/* ===== Reset básico ===== */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: var(--fundo);
+  color: var(--texto);
+  font-family: var(--fonte-texto);
+  line-height: 1.6;
+}
+
+a { color: inherit; text-decoration: none; }
+
+/* ===== Navbar ===== */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 0.75rem 2rem;
+  border-bottom: 1px solid var(--linha);
+  font-size: 0.8rem;
+}
+
+.navbar__logo { font-weight: 600; }
+
+.navbar__links { display: flex; gap: 1.5rem; }
+.navbar__links a.is-active { border-bottom: 2px solid var(--texto); }
+
+.navbar__busca {
+  padding: 0.4rem 0.9rem;
+  border: 1px solid var(--linha);
+  border-radius: 999px;
+  background: transparent;
+  font: inherit;
+}
+
+.badge {
+  display: inline-block;
+  min-width: 1.2rem;
+  padding: 0 0.3rem;
+  border: 1px solid var(--linha);
+  border-radius: 4px;
+  text-align: center;
+  font-size: 0.7rem;
+}
+
+/* ===== Elementos de texto reutilizáveis ===== */
+.secao { max-width: 960px; margin: 0 auto; padding: 4rem 2rem; }
+
+.rotulo {
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--texto-suave);
+  margin-bottom: 0.75rem;
+}
+
+.titulo {
+  font-family: var(--fonte-titulo);
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  line-height: 1.05;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.texto { color: var(--texto-suave); margin-bottom: 1.5rem; }
+
+.botao {
+  padding: 0.7rem 1.4rem;
+  border: 1px solid var(--linha);
+  border-radius: 999px;
+  background: var(--texto);
+  color: var(--fundo);
+  font: inherit;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.botao:hover { background: transparent; color: var(--texto); }
+
+/* ===== Responsividade (RNF01) ===== */
+@media (max-width: 700px) {
+  .navbar { flex-wrap: wrap; padding: 0.75rem 1rem; }
+  .navbar__links { flex-wrap: wrap; gap: 1rem; }
+  .navbar__busca { width: 100%; }
+}

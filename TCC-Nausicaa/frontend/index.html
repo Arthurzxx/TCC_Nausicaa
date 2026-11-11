@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nausicaä — Biblioteca dos Conflitos</title>
+
+  <!-- Fontes do Google: Fraunces (títulos) e Inter (texto) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="index.html" class="navbar__logo">Nausicaä · Biblioteca dos Conflitos</a>
+    <nav class="navbar__links">
+      <a href="index.html" class="is-active">Nausicaä</a>
+      <a href="#">Obras</a>
+      <a href="#">Soluções</a>
+      <a href="#">Sobre</a>
+      <a href="#">Favoritos <span class="badge" id="contador-favoritos">0</span></a>
+    </nav>
+    <input type="search" class="navbar__busca" placeholder="Pesquisar na biblioteca">
+  </header>
+
+  <main>
+    <section class="secao">
+      <p class="rotulo">Teste do ambiente</p>
+      <h1 class="titulo">Conhecer o passado para transformar o futuro</h1>
+      <p class="texto">Se você está vendo esta página com a fonte serifada e o fundo bege, o CSS está carregando.</p>
+      <button class="botao" id="botao-teste">Testar JavaScript</button>
+      <p class="texto" id="resultado-teste"></p>
+    </section>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
