@@ -252,9 +252,9 @@ TEXTOS: {
     ]
   },
   rodape: {
-    descricao:    'Trabalho realizado pelo grupo 4 de Projeto Integrador: Intervenção Cidadã',
+    descricao:    'Trabalho realizado para o TCC do curso de Análise e desenvolvimento de sistemas.',
     creditos:     '',
-    responsaveis: 'Arthur Barbosa, João Gabriel, Kaio Henrique, Mariana Prates, Victoria'
+    responsaveis: 'Arthur Barbosa & João Gabriel'
   }
 },
 
